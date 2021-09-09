@@ -1,0 +1,11 @@
+{
+  "headers": [
+    {
+      "source": "/:path*",
+      "headers": [
+        { "key": "content-type", "value": "video/webm" },
+        { "key": "x-vercel-test-headers", "value": "OK" }
+      ]
+    }
+  ]
+}
