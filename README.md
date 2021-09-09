@@ -3,6 +3,11 @@
 This repo demonstrates the following bug in Safari 14.1 on Big Sur (tested 2021-09-09):
 When a `video/webm` file is streamed over HTTP, playback fail when the URL does not end in `.webm`.
 
+The result is hosted on <vercel.com> to provide these test URLs. Both serve the same video file with the same headers (`content-type: video/webm`), only the path name is different.
+
+- <https://safari-webm-bug.vercel.app/nasa-iss>
+- <https://safari-webm-bug.vercel.app/nasa-iss.webm>
+
 To reproduce locally :
 
 ```sh
