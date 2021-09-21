@@ -8,6 +8,8 @@ The result is hosted on <vercel.com> to provide these test URLs. Both serve the 
 - <https://safari-webm-bug.vercel.app/nasa-iss>
 - <https://safari-webm-bug.vercel.app/nasa-iss.webm>
 
+Demo HTML page: <https://safari-webm-bug.vercel.app/nasa-iss>
+
 To reproduce locally :
 
 ```sh

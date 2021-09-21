@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Safari WebM Streaming Bug Demo</title>
+  </head>
+  <body>
+    <h1>Safari WebM Streaming Bug Demo</h1>
+    <hr />
+
+    <p>details and GitHub repo: <a href="https://github.com/eins78/safari-webm-bug">https://github.com/eins78/safari-webm-bug</a></p>
+    <hr />
+
+    <h2>NOT OK: URL not ending with <samp>.webm</samp></h2>
+    <blockquote>
+      <code
+        >&#x3C;video src=&#x22;https://safari-webm-bug.vercel.app/nasa-iss&#x22; controls width=&#x22;250&#x22;/&#x3E;</code
+      >
+    </blockquote>
+    <video
+      src="https://safari-webm-bug.vercel.app/nasa-iss"
+      controls
+      width="250"
+    />
+      video tag fallback
+    </video>
+    <hr />
+
+    <h2>OK: URL ending with <samp>.webm</samp></h2>
+    <blockquote>
+      <code
+        >&#x3C;video src=&#x22;https://safari-webm-bug.vercel.app/nasa-iss.webm&#x22; controls width=&#x22;250&#x22;/&#x3E;</code
+      >
+    </blockquote>
+    <video
+      src="https://safari-webm-bug.vercel.app/nasa-iss.webm"
+      controls
+      width="250"
+    />
+      video tag fallback
+    </video>
+    <hr />
+
+  </body>
+</html>
